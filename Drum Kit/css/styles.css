@@ -10,4 +10,52 @@ body {
   background: url(../assets/images/drum.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  font-family: sans-serif;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.key {
+    width: 6rem;
+    height: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    border: .3rem solid#CDD9B4;
+    border-radius: .5rem;
+    background: rgba(166, 126, 48, 0.7);
+    cursor: pointer;
+    transition: all .07s ease;
+}
+
+.key:hover{
+    background: rgba(166, 126, 48, 0.9);
+}
+
+kbd{
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: rgb(205, 217, 180);
+}
+
+kbd:hover{
+    transform: scale(1.1);
+}
+
+.sound {
+    color: rgb(14, 13, 13);
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
 }
