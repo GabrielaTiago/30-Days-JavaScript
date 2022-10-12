@@ -14,3 +14,11 @@ window.addEventListener("keydown", function (event) {
 
   playing.classList.add("playing");
 });
+
+function removeTransition(event) {
+    if (event.propertyName !== "transform") return;
+    this.classList.remove("playing");
+  }
+  
+  const keys = document.querySelectorAll(".key");
+  keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
