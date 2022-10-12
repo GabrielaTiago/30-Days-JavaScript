@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css"/>
-    <link rel="stylesheet" href="./css/styles.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Drum Kit</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="background">
-        <div class="keys">
-            <div class="key">
-                <kbd>A</kbd>
-                <span class="sound">clap</span>
-            </div>
+      <div class="keys">
+        <div class="key">
+          <kbd>A</kbd>
+          <span class="sound">clap</span>
         </div>
+      </div>
     </div>
-</body>
+
+    <audio data-key="65" src="./assets/audio/clap.wav"></audio>
+    <audio data-key="83" src="./assets/audio/hihat.wav"></audio>
+    <audio data-key="68" src="./assets/audio/kick.wav"></audio>
+    <audio data-key="70" src="./assets/audio/openhat.wav"></audio>
+    <audio data-key="71" src="./assets/audio/boom.wav"></audio>
+    <audio data-key="72" src="./assets/audio/ride.wav"></audio>
+    <audio data-key="74" src="./assets/audio/snare.wav"></audio>
+    <audio data-key="75" src="./assets/audio/tom.wav"></audio>
+    <audio data-key="76" src="./assets/audio/tink.wav"></audio>
+  </body>
 </html>
