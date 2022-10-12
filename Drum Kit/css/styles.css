@@ -37,6 +37,7 @@ body {
     background: rgba(166, 126, 48, 0.7);
     cursor: pointer;
     transition: all .07s ease;
+    text-shadow: 0 0 0.2rem #2b2b2a7d;
 }
 
 .key:hover{
@@ -58,4 +59,9 @@ kbd:hover{
     font-size: 1.1rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
+}
+
+.playing {
+    transform: scale(1.1);
+    box-shadow: 0  0 2.5rem 0.1rem rgb(205, 217, 180);
 }
