@@ -14,11 +14,23 @@ function playAudio(event, type) {
 }
 
 function keyOrClick(event, type) {
-  if (type === "press") return keySound(event);
+  if (type === "press") {
+    return keySound(event);
+  } else if (type === "click") {
+    return clickSound(event);
+  }
 }
 
 function keySound(event) {
   return event.keyCode;
+}
+
+function clickSound(event) {
+  const clickOnDivKey = event.path[0].getAttribute("data-key");
+  const clickInternalDiv = event.path[1].getAttribute("data-key");
+
+  if (clickOnDivKey) return clickOnDivKey;
+  if (clickInternalDiv) return clickInternalDiv;
 }
 
 function removeTransition(event) {
@@ -31,5 +43,10 @@ keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
 
 window.addEventListener("keydown", (event) => {
   const type = "press";
+  playAudio(event, type);
+});
+
+window.addEventListener("click", (event) => {
+  const type = "click";
   playAudio(event, type);
 });
