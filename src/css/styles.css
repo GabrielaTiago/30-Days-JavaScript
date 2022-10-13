@@ -32,7 +32,7 @@ a {
 header {
   width: 100%;
   min-height: 4rem;
-  padding: 0 3%;
+  padding: 2% 2%;
 
   display: flex;
   align-items: center;
@@ -40,6 +40,7 @@ header {
 
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1;
 
   box-shadow: 0rem 0.125rem 0.25rem 0.125rem rgba(0, 0, 0, 0.2);
@@ -48,16 +49,17 @@ header {
 }
 
 .header-container {
-    width: 100%;
-    max-width: 75rem;
+  width: 100%;
+  max-width: 75rem;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header-title{
-    font-size: 1.7rem;
-    font-weight: 600;
+.header-title {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .contact {
@@ -67,8 +69,9 @@ header {
 }
 
 main {
+  width: 100%;
   max-width: 75rem;
-  margin: 8rem 1rem 2rem 1rem;
+  padding: 8rem 1rem 2rem 1rem;
 }
 
 .description {
@@ -137,13 +140,4 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.footer {
-  margin-bottom: 0.5rem;
-
-  position: absolute;
-  bottom: 0;
-
-  font-size: 1.1rem;
 }
