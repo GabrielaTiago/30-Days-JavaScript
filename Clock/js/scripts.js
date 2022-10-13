@@ -26,6 +26,13 @@ function calculatesDegrees(type, time) {
 
 function secondChange(seconds) {
   const secondsDegrees = calculatesDegrees(seconds, SIXTY_SECONDS_OR_MINUTES);
+
+  if (secondsDegrees === 90) {
+    secondHand.style.transition = "none";
+    minuteHand.style.transition = "none";
+    hourHand.style.transition = "none";
+  }
+
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 }
 
