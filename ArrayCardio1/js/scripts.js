@@ -14,3 +14,16 @@ function birthYear() {
 }
 
 console.table(birthYear());
+
+//**************************************************************************************//
+
+// 2. Give us an array of the inventors first and last names
+
+function fullNames() {
+  const names = inventors.map(
+    (inventor) => `${inventor.first} ${inventor.last}`
+  );
+  return names;
+}
+
+console.table(fullNames());
