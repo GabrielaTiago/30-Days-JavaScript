@@ -8,6 +8,8 @@
   --base: #e22157;
   --spacing: 10px;
   --blur: 0px;
+  --bg: #193549;
+  --f-gray: gray; 
 }
 
 body {
@@ -20,10 +22,10 @@ body {
   align-items: center;
   overflow-x: hidden;
 
-  background: #193549;
+  background: var(--bg);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color: grey;
+  color: var(--f-gray);
 }
 
 header {
@@ -65,6 +67,17 @@ img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
+}
+
+footer {
+  margin-bottom: 10px;
+  position: fixed;
+  bottom: 0;
+}
+
+a {
+  color: var(--f-gray);
+  font-weight: 600;
 }
 
 @media (max-width: 425px) {
