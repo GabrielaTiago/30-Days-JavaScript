@@ -6,6 +6,7 @@ import { inventors } from "./dataUtils.js";
 //****************************************************************************************//
 
 // 1. Filter the list of inventors for those who were born in the 1500's
+
 function birthYear() {
   const fifteen = inventors.filter(
     (inventor) => inventor.year >= 1500 && inventor.year < 1600
@@ -27,3 +28,17 @@ function fullNames() {
 }
 
 console.table(fullNames());
+
+//**************************************************************************************//
+
+// 3. Sort the inventors by birthdate, oldest to youngest
+
+function youngestList() {
+  const youngest = inventors.sort((a, b) => {
+    if (a.year > b.year) return 1;
+    else return -1;
+  });
+  return youngest;
+}
+
+console.table(youngestList());
