@@ -15,31 +15,37 @@
 
     <main>
       <div class="controls">
-        <label for="spacing">Spacing:</label>
-        <input
-          id="spacing"
-          type="range"
-          name="spacing"
-          min="10"
-          max="200"
-          value="10"
-          data-sizing="px"
-        />
+        <div class="controls-container">
+          <label for="spacing">Spacing:</label>
+          <input
+            id="spacing"
+            type="range"
+            name="spacing"
+            min="10"
+            max="150"
+            value="10"
+            data-sizing="px"
+          />
+        </div>
 
-        <label for="blur">Blur:</label>
-        <input
-          id="blur"
-          type="range"
-          name="blur"
-          min="0"
-          max="25"
-          value="10"
-          data-sizing="px"
-        />
+        <div class="controls-container">
+          <label for="blur">Blur:</label>
+          <input
+            id="blur"
+            type="range"
+            name="blur"
+            min="0"
+            max="25"
+            value="10"
+            data-sizing="px"
+          />
+        </div>
 
-        <label for="base">Base Color</label>
-        <input id="base" type="color" name="base" value="#ffc600" />
-        <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" />
+        <div class="controls-container">
+          <label for="base">Base Color</label>
+          <input id="base" type="color" name="base" value="#E22157" />
+        </div>
+        <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"  />
       </div>
     </main>
     <script src="./js/scripts.js"></script>
