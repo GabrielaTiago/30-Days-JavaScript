@@ -1,4 +1,4 @@
-import { inventors } from "./dataUtils.js";
+import { inventors, people } from "./dataUtils.js";
 
 // Get your shorts on - this is an array workout!
 // ## Array Cardio Day 1
@@ -90,4 +90,20 @@ function boulevardsWhithDe() {
   return filter;
 }
 
+//**************************************************************************************//
 
+// 7. Sort the people alphabetically by last name
+
+function sortByTheLastName() {
+  const sort = people.sort((current, next) => {
+    const [currentFirstName, currentLastName] = current.split(", ");
+    const [nextFirstName, nextLastName] = next.split(", ");
+
+    if (currentLastName > nextLastName) return 1;
+    else return -1;
+  });
+
+  return sort;
+}
+
+console.table(sortByTheLastName());
