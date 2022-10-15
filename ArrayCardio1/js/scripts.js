@@ -46,6 +46,7 @@ console.table(youngestList());
 //**************************************************************************************//
 
 // 4. How many years did all the inventors live all together?
+
 function numberOfLivedYears() {
   const lifeTime = inventors.reduce((acc, inventor) => {
     const life = inventor.passed - inventor.year;
@@ -56,3 +57,19 @@ function numberOfLivedYears() {
 }
 
 console.log(numberOfLivedYears());
+
+//**************************************************************************************//
+
+// 5. Sort the inventors by years lived
+
+function longerLifeyime() {
+  const lifetime = inventors.sort((a, b) => {
+    const lifeA = a.passed - a.year;
+    const lifeB = b.passed - b.year;
+
+    return lifeA > lifeB ? -1 : 1;
+  });
+  return lifetime;
+}
+
+console.table(longerLifeyime());
