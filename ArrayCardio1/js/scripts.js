@@ -1,4 +1,4 @@
-import { inventors, people } from "./dataUtils.js";
+import { data, inventors, people } from "./dataUtils.js";
 
 // Get your shorts on - this is an array workout!
 // ## Array Cardio Day 1
@@ -107,3 +107,21 @@ function sortByTheLastName() {
 }
 
 console.table(sortByTheLastName());
+
+//**************************************************************************************//
+
+// 8. Sum up the instances of each of the automobile
+
+function automobile() {
+  const sumAutomobile = data.reduce((acc, item) => {
+    if (!acc[item]) {
+      acc[item] = 1;
+    }
+    acc[item]++;
+    return acc;
+  }, {});
+
+  return sumAutomobile;
+}
+
+console.log(automobile());
